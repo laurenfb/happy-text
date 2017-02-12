@@ -1,7 +1,10 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
   <title>happy text</title>
+  <!-- avoid relative paths here in case we change file structure later -->
+  <link rel='stylesheet' href="{% static 'css/style.css' %}" />
 </head>
 <body>
   <h1>Hello World!</h1>
