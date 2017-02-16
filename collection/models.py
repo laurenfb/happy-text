@@ -10,5 +10,5 @@ class User(models.Model):
 
 class Quote(models.Model):
     author = models.CharField(max_length=255)
-    slug = models.SlugField(unique=True, default="quote-1")
+    slug = models.SlugField(unique=True)
     text = models.TextField()
