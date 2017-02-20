@@ -22,5 +22,8 @@ urlpatterns = [
     url(r'^$', views.index, name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
     url(r'^login/$', TemplateView.as_view(template_name='login.html'), name='login'),
-    url(r'^admin/', admin.site.urls)
+    url(r'^admin/', admin.site.urls),
+    #Twilio URLs
+    url(r'^sms/$', 'collection.views.sms'),
+    url(r'^ring/$', 'collection.views.ring'),
 ]
